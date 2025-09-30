@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d706f84dd6ac348a6787e62aa0eaf8, type: 3}
+  m_Name: GameAlphabet
+  m_EditorClassIdentifier: 
+  AlphabetNormal:
+  - letter: "\u0410"
+    image: {fileID: -4661038512141037494, guid: 5e45a3ca0e6ab60428712516fd3592a4, type: 3}
+  - letter: "\u0411"
+    image: {fileID: 3260004429313142294, guid: 7897724caf110054a9832733b48ca116, type: 3}
+  - letter: "\u0412"
+    image: {fileID: 8280116133949127885, guid: 7758cbe4bc5523545a071d6ca3d9442d, type: 3}
+  - letter: "\u0413"
+    image: {fileID: -3268017656919318263, guid: c26e118777197bc45a990e77da532eed, type: 3}
+  - letter: "\u0414"
+    image: {fileID: 9043468770970803416, guid: f09ea26e1a1ace04eabfa1a3aba03247, type: 3}
+  - letter: "\u0415"
+    image: {fileID: 8317035677676387108, guid: 2cc13264760e5984481f80e7256923f4, type: 3}
+  - letter: "\u0401"
+    image: {fileID: -9154722548401219931, guid: 09d7890d7664b454a8e01f6cb8bb12d0, type: 3}
+  - letter: "\u0416"
+    image: {fileID: -6791710090953329689, guid: 6eb428360ab1a274a983f1b6f92e2584, type: 3}
+  - letter: "\u0417"
+    image: {fileID: -2647141847751677991, guid: 4a7b08c73c7a2214a8844d023623808a, type: 3}
+  - letter: "\u0418"
+    image: {fileID: 5964193511808407202, guid: e6a0497ff9c033549b1eead7fa8a66da, type: 3}
+  - letter: "\u0419"
+    image: {fileID: 7517215616198554446, guid: 245c5ef5bc630f54fbdab6e9648fd0d5, type: 3}
+  - letter: "\u041A"
+    image: {fileID: -8583136301011771959, guid: fdeffc5a876245a43878b0dba895bf73, type: 3}
+  - letter: "\u041B"
+    image: {fileID: -285417064788224631, guid: 991cff1d94d9d894da7279bb27ee72ee, type: 3}
+  - letter: "\u041C"
+    image: {fileID: -1914601371364858448, guid: 23ac8db6bbfb7384299aa0a479233314, type: 3}
+  - letter: "\u041D"
+    image: {fileID: -332926265998303488, guid: 474b20d9b40bdbf4e9196696b9d45188, type: 3}
+  - letter: "\u041E"
+    image: {fileID: 887042198597016039, guid: c417cc4ff0dc9de4db36c457acc5771a, type: 3}
+  - letter: "\u041F"
+    image: {fileID: 2388141196485332219, guid: d3ef11c096fc83f42b953f4377eb3317, type: 3}
+  - letter: "\u0420"
+    image: {fileID: 5687225351406558793, guid: 660f38c352f895c4caedd6bb63979ec7, type: 3}
+  - letter: "\u0421"
+    image: {fileID: 2279028960124904679, guid: c3e6c1917c43e814e90426616e46427b, type: 3}
+  - letter: "\u0422"
+    image: {fileID: -4399886293047104647, guid: cf51068f4c50e6844b3074a25f8a119e, type: 3}
+  - letter: "\u0423"
+    image: {fileID: -1882654337534638034, guid: 2c7521144ef413b4282277a6fd696e47, type: 3}
+  - letter: "\u0424"
+    image: {fileID: 7360839490198102762, guid: a526e9c24abc8e24fa741ac756e45a59, type: 3}
+  - letter: "\u0425"
+    image: {fileID: 7574709193804415944, guid: 4455905be466b0847883fb839e90be8f, type: 3}
+  - letter: "\u0426"
+    image: {fileID: 1824652631493738102, guid: eceb2114c1223884ab9804f527863c32, type: 3}
+  - letter: "\u0427"
+    image: {fileID: -8627867029622169649, guid: 42ab4202f3d18d7468c0d0bbd00128c5, type: 3}
+  - letter: "\u0428"
+    image: {fileID: 3650827384066576641, guid: 72f9a05131a152647a12829a0d4ccb8e, type: 3}
+  - letter: "\u0429"
+    image: {fileID: -1743661481497167642, guid: 1f54211516827b64790a0a9d3b064948, type: 3}
+  - letter: "\u042A"
+    image: {fileID: 8999516375547421918, guid: a370a911381e4ca4895d93b8a501dc37, type: 3}
+  - letter: "\u042B"
+    image: {fileID: 6647884651189300780, guid: b48c8d85518545a49991ecf43b6c3d38, type: 3}
+  - letter: "\u042C"
+    image: {fileID: 8965992422917525967, guid: 02744808d75302a4bb231acb9055f2cf, type: 3}
+  - letter: "\u042D"
+    image: {fileID: -7949731244148548409, guid: 2dbcd90b7c414114aa773d66148cb554, type: 3}
+  - letter: "\u042E"
+    image: {fileID: -6054857668054795710, guid: fee4cdaa4efe76d43929806e5d32eb1e, type: 3}
+  - letter: "\u042F"
+    image: {fileID: -301681094662620838, guid: 60a415c1c02059e4eb4b10edc64d0d3a, type: 3}
+  AlphabetFalse:
+  - letter: "\u0410"
+    image: {fileID: -4661038512141037494, guid: 8fd6d12ef8e76684daa4039de8af3c41, type: 3}
+  - letter: "\u0411"
+    image: {fileID: 3260004429313142294, guid: f53583dc1c93a66429ce4f83cb4b2858, type: 3}
+  - letter: "\u0412"
+    image: {fileID: 8280116133949127885, guid: 69009e007a7daef459822bd1dcea0244, type: 3}
+  - letter: "\u0413"
+    image: {fileID: -3268017656919318263, guid: b1eab8d73a0d38e48b169aeff477868d, type: 3}
+  - letter: "\u0414"
+    image: {fileID: 9043468770970803416, guid: 6a907e8f8fe3ae645abc5981cc6e8f78, type: 3}
+  - letter: "\u0415"
+    image: {fileID: 8317035677676387108, guid: fd797ce31b798ee48be4f976106007a9, type: 3}
+  - letter: "\u0401"
+    image: {fileID: -9154722548401219931, guid: 13555c8516562d948ac345c0f6c6fe7c, type: 3}
+  - letter: "\u0416"
+    image: {fileID: -6791710090953329689, guid: 6197849b9f06cb24db86099fbfe6097c, type: 3}
+  - letter: "\u0417"
+    image: {fileID: -2647141847751677991, guid: 0600c48f522c967448c88e689a587fcc, type: 3}
+  - letter: "\u0418"
+    image: {fileID: 5964193511808407202, guid: e266a73d6278ba7439e6b31cf61c29d3, type: 3}
+  - letter: "\u0419"
+    image: {fileID: 7517215616198554446, guid: 080fbbf8fb7cbd8458cc6ccb388c25fa, type: 3}
+  - letter: "\u041A"
+    image: {fileID: -8583136301011771959, guid: 5c76bffd87ffdc24f8519cf7789903da, type: 3}
+  - letter: "\u041B"
+    image: {fileID: -285417064788224631, guid: 57f6e5e2b3b79d749bfab3e47943b391, type: 3}
+  - letter: "\u041C"
+    image: {fileID: -1914601371364858448, guid: 9c19bd08bb761e64fa2ccbc1f5173d92, type: 3}
+  - letter: "\u041D"
+    image: {fileID: -332926265998303488, guid: f79e8ac3232f4194ab47a8cc7d1ac59c, type: 3}
+  - letter: "\u041E"
+    image: {fileID: 887042198597016039, guid: 6572c153cf408134d8ea22f308af1a7e, type: 3}
+  - letter: "\u041F"
+    image: {fileID: 2388141196485332219, guid: a708e03fb20b8bd44944daef325179f8, type: 3}
+  - letter: "\u0420"
+    image: {fileID: 5687225351406558793, guid: 97d014320aa50e747a387fcd6329fe3f, type: 3}
+  - letter: "\u0421"
+    image: {fileID: 2279028960124904679, guid: d1d8458245fb87d49a30d0eb60539605, type: 3}
+  - letter: "\u0422"
+    image: {fileID: -4399886293047104647, guid: e8bbb9170022c8d44ab0d05595699bbc, type: 3}
+  - letter: "\u0423"
+    image: {fileID: -1882654337534638034, guid: fc2cf2254cf0ef545b6d4cfa062f7826, type: 3}
+  - letter: "\u0424"
+    image: {fileID: 7360839490198102762, guid: 03cbbf71fa96e284a821b9a756d3f078, type: 3}
+  - letter: "\u0425"
+    image: {fileID: 7574709193804415944, guid: 18ca9e16d351ccd4891f6916f5cef27b, type: 3}
+  - letter: "\u0426"
+    image: {fileID: 1824652631493738102, guid: fa8fbd45098655e4ea92795213ca6f1f, type: 3}
+  - letter: "\u0427"
+    image: {fileID: -8627867029622169649, guid: ed6313890527cd941a24d1a90130af77, type: 3}
+  - letter: "\u0428"
+    image: {fileID: 3650827384066576641, guid: a3de33b9702002c499fe1e8f66329638, type: 3}
+  - letter: "\u0429"
+    image: {fileID: -1743661481497167642, guid: b5dd0be2f2f624944a1fb7d2e1290be8, type: 3}
+  - letter: "\u042A"
+    image: {fileID: 8999516375547421918, guid: 00a539452554f024da6c621396328bf1, type: 3}
+  - letter: "\u042B"
+    image: {fileID: 6647884651189300780, guid: b1e2f3857eceff84b85eb5879bcd9444, type: 3}
+  - letter: "\u042C"
+    image: {fileID: 8965992422917525967, guid: 87c1d41b986e3a84a9eb0b305b18ea96, type: 3}
+  - letter: "\u042D"
+    image: {fileID: -7949731244148548409, guid: a675c0b08b3bf2d4b8fe5b848e18abe7, type: 3}
+  - letter: "\u042E"
+    image: {fileID: -6054857668054795710, guid: 920ad002a6634f44f9420b1c5cc71c60, type: 3}
+  - letter: "\u042F"
+    image: {fileID: -301681094662620838, guid: 9a76728e5a4544e4b816b33e8c31e3f5, type: 3}
+  AlphabetTrue:
+  - letter: "\u0410"
+    image: {fileID: -4661038512141037494, guid: 61a7c21694506e14d82228b55a400ba4, type: 3}
+  - letter: "\u0411"
+    image: {fileID: 3260004429313142294, guid: 429fc3fa3529394468e27f0f9e1c2812, type: 3}
+  - letter: "\u0412"
+    image: {fileID: 8280116133949127885, guid: cba8b243aa19833489f1b3eba55f5182, type: 3}
+  - letter: "\u0413"
+    image: {fileID: -3268017656919318263, guid: 98b3faea1b6c42747acfbbfa4cbc5e2e, type: 3}
+  - letter: "\u0414"
+    image: {fileID: 9043468770970803416, guid: 7aa8dfe9edf88ce4dbdbe49f3fbea749, type: 3}
+  - letter: "\u0415"
+    image: {fileID: 8317035677676387108, guid: 33e1b16efb4d5fd41b8952cc459c0982, type: 3}
+  - letter: "\u0401"
+    image: {fileID: -9154722548401219931, guid: a98674d7a8ed2cd4fb5f5bb1561ebe0d, type: 3}
+  - letter: "\u0416"
+    image: {fileID: -6791710090953329689, guid: d240712396b591b449d7fb2a89a42303, type: 3}
+  - letter: "\u0417"
+    image: {fileID: -2647141847751677991, guid: bea4e4177b6eb4141b66169464782107, type: 3}
+  - letter: "\u0418"
+    image: {fileID: 5964193511808407202, guid: ccef00a6bf9a99443a96521cbd928c17, type: 3}
+  - letter: "\u0419"
+    image: {fileID: 7517215616198554446, guid: 8db6ba5a985330a41880db740e71e024, type: 3}
+  - letter: "\u041A"
+    image: {fileID: -8583136301011771959, guid: a63815fb484402c46b2cc30314214aac, type: 3}
+  - letter: "\u041B"
+    image: {fileID: -285417064788224631, guid: 5193733a66d09a744a1b685e10855cb7, type: 3}
+  - letter: "\u041C"
+    image: {fileID: -1914601371364858448, guid: dc63443b62cff244e9a1b9917911b99e, type: 3}
+  - letter: "\u041D"
+    image: {fileID: -332926265998303488, guid: e88b3cb97d4f58844a578f3a39d54bfd, type: 3}
+  - letter: "\u041E"
+    image: {fileID: 887042198597016039, guid: 2fa62525dac68f84abe39e6f9293d462, type: 3}
+  - letter: "\u041F"
+    image: {fileID: 2388141196485332219, guid: 433269e3974ec6042b22448aa5b5ab2d, type: 3}
+  - letter: "\u0420"
+    image: {fileID: 5687225351406558793, guid: 95c87031ffdb8ab43b58776322858855, type: 3}
+  - letter: "\u0421"
+    image: {fileID: 2279028960124904679, guid: 3fcff9f83c3a94e49a905f1cddb9fb72, type: 3}
+  - letter: "\u0422"
+    image: {fileID: -4399886293047104647, guid: e880e83c1aa85a14897016ab29b502aa, type: 3}
+  - letter: "\u0423"
+    image: {fileID: -1882654337534638034, guid: 76ed4791fe6cca646878b2b6141292b3, type: 3}
+  - letter: "\u0424"
+    image: {fileID: 7360839490198102762, guid: e0d1c2d7c628ee64ab109dc468ddaa58, type: 3}
+  - letter: "\u0425"
+    image: {fileID: 7574709193804415944, guid: c36f3668cf3bf654d8030ce16418d118, type: 3}
+  - letter: "\u0426"
+    image: {fileID: 1824652631493738102, guid: 5fa526babebde7644b21c1149bb9c70f, type: 3}
+  - letter: "\u0427"
+    image: {fileID: -8627867029622169649, guid: 0363ea66e7e8056449a6cdf1536816c1, type: 3}
+  - letter: "\u0428"
+    image: {fileID: 3650827384066576641, guid: 6b5bfe83065b330469abf919d0ba657c, type: 3}
+  - letter: "\u0429"
+    image: {fileID: -1743661481497167642, guid: 5241a4e06a1982248b8374ff70d6bd09, type: 3}
+  - letter: "\u042A"
+    image: {fileID: 8999516375547421918, guid: 1491e1a77c5629343b095586c8e46f27, type: 3}
+  - letter: "\u042B"
+    image: {fileID: 6647884651189300780, guid: 3ee0097c795fad343ac55ed48f7f5e37, type: 3}
+  - letter: "\u042C"
+    image: {fileID: 8965992422917525967, guid: dd6f8bd7c5514cf4db82e68fc4d817c3, type: 3}
+  - letter: "\u042D"
+    image: {fileID: -7949731244148548409, guid: d7e56faedc500554f8eaa6539b54c633, type: 3}
+  - letter: "\u042E"
+    image: {fileID: -6054857668054795710, guid: a0eabe6a6232bbc48bc13f74dd97e339, type: 3}
+  - letter: "\u042F"
+    image: {fileID: -301681094662620838, guid: 659f84a5d111bb245b40a12b82148814, type: 3}
