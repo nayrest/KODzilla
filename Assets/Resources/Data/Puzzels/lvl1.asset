@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0104b8f32a1a8bb43a1a552bdfc1e220, type: 3}
+  m_Name: lvl1
+  m_EditorClassIdentifier: 
+  timeInSeconds: 0
+  Columns: 10
+  Rows: 10
+  Board:
+  - Size: 10
+    Row:
+    - "\u0410"
+    - "\u0412"
+    - "\u0422"
+    - "\u042D"
+    - "\u0417"
+    - "\u041B"
+    - "\u0428"
+    - "\u0401"
+    - "\u0418"
+    - "\u0412"
+  - Size: 10
+    Row:
+    - "\u0428"
+    - "\u042A"
+    - "\u0429"
+    - "\u0415"
+    - "\u042F"
+    - "\u0423"
+    - "\u042B"
+    - "\u041C"
+    - "\u042E"
+    - "\u0422"
+  - Size: 10
+    Row:
+    - "\u0418"
+    - "\u0414"
+    - "\u0414"
+    - "\u0429"
+    - "\u0423"
+    - "\u041A"
+    - "\u0411"
+    - "\u0427"
+    - "\u041B"
+    - "\u041A"
+  - Size: 10
+    Row:
+    - "\u041D"
+    - "\u042B"
+    - "\u0419"
+    - "\u0422"
+    - "\u0429"
+    - "\u0414"
+    - "\u042C"
+    - "\u042A"
+    - "\u0419"
+    - "\u041C"
+  - Size: 10
+    Row:
+    - "\u042A"
+    - "\u0423"
+    - "\u041A"
+    - "\u0422"
+    - "\u0427"
+    - "\u041D"
+    - "\u0423"
+    - "\u0425"
+    - "\u042D"
+    - "\u0426"
+  - Size: 10
+    Row:
+    - "\u0424"
+    - "\u0422"
+    - "\u042A"
+    - "\u042C"
+    - "\u0414"
+    - "\u041B"
+    - "\u0417"
+    - "\u0425"
+    - "\u0412"
+    - "\u0414"
+  - Size: 10
+    Row:
+    - "\u042C"
+    - "\u0417"
+    - "\u0416"
+    - "\u0419"
+    - "\u042D"
+    - "\u0428"
+    - "\u0422"
+    - "\u0410"
+    - "\u0427"
+    - "\u0424"
+  - Size: 10
+    Row:
+    - "\u0428"
+    - "\u0413"
+    - "\u0419"
+    - "\u0416"
+    - "\u042E"
+    - "\u0416"
+    - "\u042B"
+    - "\u041A"
+    - "\u0422"
+    - "\u0427"
+  - Size: 10
+    Row:
+    - "\u0426"
+    - "\u042E"
+    - "\u0413"
+    - "\u0424"
+    - "\u042B"
+    - "\u042A"
+    - "\u042D"
+    - "\u0417"
+    - "\u0414"
+    - "\u0425"
+  - Size: 10
+    Row:
+    - "\u0422"
+    - "\u0411"
+    - "\u042C"
+    - "\u042F"
+    - "\u042B"
+    - "\u042F"
+    - "\u0418"
+    - "\u042D"
+    - "\u042A"
+    - "\u042F"
+  SearchWords: []
