@@ -17,6 +17,44 @@ public class NewEmptyCSharpScript : MonoBehaviour
 
     void Start()
     {
+        SpawnGridSquares();
+        SetSquaresPosition();
+    }
+
+    private void SetSquaresPosition()
+    {
+        var squareRect = squareList[0].GetComponent<SpriteRenderer>().sprite.rect;
+        var squareTransform = squareList[0].GetComponent<Transform>();
+
+        var offset = new Vector2
+        {
+            x = (squareRect.width * squareTransform.localScale.x + squareOffset) * 0.01f,
+            y = (squareRect.height * squareTransform.localScale.y + squareOffset) * 0.01f
+        };
+
+        var startPosition = GetFirstSquarePosition();
+        int columnNumber = 0;
+        int rowNumber = 0;
+
+        foreach (var square in squareList)
+        {
+            if (rowNumber + 1 > currentGameData.selectedBoardData.Rows)
+            {
+                columnNumber++;
+                rowNumber = 0;
+            }
+
+            var positionX = startPosition.x + offset.x * columnNumber;
+            var positionY = startPosition.y - offset.y * rowNumber;
+
+            square.GetComponent<Transform>().position = new Vector2(positionX, positionY);
+            rowNumber++;
+        }
+    }
+
+    private Vector2 GetFirstSquarePosition()
+    {
+        var startPosition = new Vector2(0f, transform.position);
 
     }
 
@@ -46,6 +84,10 @@ public class NewEmptyCSharpScript : MonoBehaviour
                     else
                     {
                         squareList.Add(Instantiate(grideSquarePrefad));
+                        squareList[squareList.Count -1].GetComponent<GrideSquare>().SetSprite(normalLetterData, correctLetterData, selectedLetterData);
+                        squareList[squareList.Count - 1].transform.SetParent(this.transform);
+                        squareList[squareList.Count - 1].GetComponent<Transform>().position = new Vector3(0f, 0f, 0f);
+                        squareList[squareList.Count - 1].transform.localScale = squareScale;
                     }
                 }
             }
