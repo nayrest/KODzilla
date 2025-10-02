@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.16, y: -144}
+  m_AnchoredPosition: {x: -1.16, y: -372.27}
   m_SizeDelta: {x: 769.67, y: 150.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8387526159992936791
@@ -126,7 +126,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.00000047684, y: 0}
-  m_SizeDelta: {x: 871.02, y: 1696.36}
+  m_SizeDelta: {x: 871.02, y: 1293.6388}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5812440293794887128
 CanvasRenderer:
@@ -201,9 +201,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 338, y: 753}
+  m_AnchoredPosition: {x: 349, y: 526}
   m_SizeDelta: {x: 118.99, y: 123.84}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.49999997}
 --- !u!222 &4927326698253247982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -321,7 +321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -263.73}
+  m_AnchoredPosition: {x: 0, y: -492}
   m_SizeDelta: {x: 340.53, y: 88.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3974622393584390657
@@ -440,7 +440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.03, y: 10.409996}
+  m_AnchoredPosition: {x: 1.03, y: -217.85999}
   m_SizeDelta: {x: 836.64, y: 113.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8951716636310332248
@@ -521,7 +521,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.638e-12, y: 366.47}
+  m_AnchoredPosition: {x: 3.638e-12, y: 138.20004}
   m_SizeDelta: {x: 871.02, y: 571.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2444355747695351980
