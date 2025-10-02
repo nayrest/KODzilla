@@ -59,14 +59,16 @@ public class NewEmptyCSharpScript : MonoBehaviour
         var squareTransform = squareList[0].GetComponent<Transform>();
         var squareSize = new Vector2(0f, 0f);
 
-        squareSize.x = squareRect.width * squareTransform.localScale.x;
-        squareSize.y = squareRect.height * squareTransform.localScale.y;
+        squareSize.x = (squareRect.width * squareTransform.localScale.x + squareOffset) * 0.01f;
+        squareSize.y = (squareRect.height * squareTransform.localScale.y + squareOffset) * 0.01f;
 
-        var midWidthPosition = (((currentGameData.selectedBoardData.Columns - 1) * squareSize.x) / 2) * 0.01f;
-        var midWidthHeight = (((currentGameData.selectedBoardData.Rows - 1) * squareSize.y) / 2) * 0.01f;
+        // Ключевое изменение: учитываем squareOffset при расчете центра
+        var totalGridWidth = (currentGameData.selectedBoardData.Columns - 1) * squareSize.x;
+        var totalGridHeight = (currentGameData.selectedBoardData.Rows - 1) * squareSize.y;
 
-        startPosition.x = (midWidthPosition != 0) ? midWidthPosition * - 1 : midWidthPosition;
-        startPosition.y +=  midWidthHeight;
+        // Центрируем по горизонтали и вертикали
+        startPosition.x = -totalGridWidth / 2;
+        startPosition.y = transform.position.y + totalGridHeight / 2;
 
         return startPosition;
     }
@@ -140,17 +142,18 @@ public class NewEmptyCSharpScript : MonoBehaviour
     private bool ShouldScaleDown(Vector3 targetScale)
     {
         var squareRect = grideSquarePrefad.GetComponent<SpriteRenderer>().sprite.rect;
+        var squareTransform = grideSquarePrefad.GetComponent<Transform>();
         var squareSize = new Vector2(0f, 0f);
+
+        squareSize.x = (squareRect.width * targetScale.x + squareOffset) * 0.01f;
+        squareSize.y = (squareRect.height * targetScale.y + squareOffset) * 0.01f;
+
+        var totalGridWidth = currentGameData.selectedBoardData.Columns * squareSize.x;
+        var totalGridHeight = currentGameData.selectedBoardData.Rows * squareSize.y;
+
         var startPosition = new Vector2(0f, 0f);
-
-        squareSize.x = (squareRect.width * targetScale.x) + squareOffset;
-        squareSize.y = (squareRect.height * targetScale.y) + squareOffset;
-
-        var midWidthPosition = ((currentGameData.selectedBoardData.Columns * squareSize.x) / 2) * 0.01f;
-        var midHeightPosition = ((currentGameData.selectedBoardData.Rows * squareSize.y) / 2) * 0.01f;
-
-        startPosition.x = (midWidthPosition != 0) ? midWidthPosition * -1 : midWidthPosition;
-        startPosition.y = midHeightPosition;
+        startPosition.x = -totalGridWidth / 2;
+        startPosition.y = totalGridHeight / 2;
 
         return startPosition.x < GetHalfScreenWidth() * -1 || startPosition.y > topPosition;
     }
