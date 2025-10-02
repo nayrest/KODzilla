@@ -57,4 +57,12 @@ public static class GameEvents
             OnCorrectWord(word, squareIndexes);
         }
     }
+
+    public delegate void LevelComplete();
+    public static event LevelComplete OnLevelComplete;
+
+    public static void LevelCompleteMethod()
+    {
+        OnLevelComplete?.Invoke();
+    }
 }

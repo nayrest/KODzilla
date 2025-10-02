@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class SearchingWordsList : MonoBehaviour
@@ -15,9 +15,18 @@ public class SearchingWordsList : MonoBehaviour
     private int _wordsNumber;
 
     private List<GameObject> _words = new List<GameObject>();
-    
+
+    [SerializeField] private bool showWordList = false;
+
     private void Start()
     {
+        if (!showWordList)
+        {
+            // Если не нужно показывать список слов, отключаем весь объект
+            gameObject.SetActive(false);
+            return;
+        }
+
         _wordsNumber = currentGameData.selectedBoardData.SearchWords.Count;
 
         if (_wordsNumber < _columns)

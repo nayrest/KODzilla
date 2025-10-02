@@ -119,6 +119,58 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2482855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2482857}
+  - component: {fileID: 2482856}
+  m_Layer: 0
+  m_Name: LevelCompleteManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2482856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1e03c7ba162be44acb3e6bc81c46c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelCompleteMessagePrefab: {fileID: 7241993969400428001, guid: 6b24893eaa38b0048ac153c4ce0437f0, type: 3}
+  adWindowPrefab: {fileID: 2864442799382965184, guid: 001a06fd49496ea44a6691621909b0b6, type: 3}
+  uiParent: {fileID: 88187331}
+  wordsGridObject: {fileID: 1411376685}
+  returnToMain: {fileID: 1010200605}
+  mainMenuSceneName: MainMenu
+  messageDisplayTime: 3
+  adLinkURL: https://www.gazprombank.ru/personal/credit-cards/7950641/
+--- !u!4 &2482857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482855}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9344332, y: -0.56976736, z: -0.040446002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &61822325
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +621,7 @@ MonoBehaviour:
   offset: 10
   maxColumns: 5
   maxRows: 3
+  showWordList: 0
 --- !u!114 &724632029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,6 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0f0ea131d090548a66ddef153041c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  help: {fileID: 0}
 --- !u!4 &2006391777
 Transform:
   m_ObjectHideFlags: 0
@@ -855,3 +909,4 @@ SceneRoots:
   - {fileID: 1411376687}
   - {fileID: 88187331}
   - {fileID: 579644460}
+  - {fileID: 2482857}

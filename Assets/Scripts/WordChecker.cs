@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using static GameEvents;
 
@@ -18,6 +18,9 @@ public class WordChecker : MonoBehaviour
     private Vector3 _rayStartPosition;
     private List<int> _correctSquareList = new List<int>();
 
+    private int _foundWordsCount = 0;
+    private int _totalWordsCount = 0;
+
     private void OnEnable()
     {
         GameEvents.OnCheckSquare += SquareSelected;
@@ -35,6 +38,8 @@ public class WordChecker : MonoBehaviour
     {
         _assignedPoints = 0;
         _completedWords = 0;
+        _totalWordsCount = currentGameData.selectedBoardData.SearchWords.Count;
+        _foundWordsCount = 0;
     }
 
     // Update is called once per frame
@@ -102,8 +107,20 @@ public class WordChecker : MonoBehaviour
                 GameEvents.CorrectWordMethod(_word, _correctSquareList);
                 _word = string.Empty;
                 _correctSquareList.Clear();
+
+                _foundWordsCount++;
+                CheckLevelComplete();
                 return;
             }
+        }
+    }
+
+    private void CheckLevelComplete()
+    {
+        if (_foundWordsCount >= _totalWordsCount)
+        {
+            // Все слова найдены - уровень завершен
+            GameEvents.LevelCompleteMethod();
         }
     }
 

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ГПБ ФИНСЛОВО</title>
+    <meta name="viewport" content="width=1080, height=1920, user-scalable=no">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            position: relative;
+            width: 1080px;
+            height: 1920px;
+            background: white;
+        }
+        
+        #unity-container {
+            position: absolute;
+            width: 1080px;
+            height: 1920px;
+        }
+        
+        #unity-canvas {
+            width: 1080px !important;
+            height: 1920px !important;
+            background: #FFFFFF;
+        }
+        
+        #unity-loading-bar {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #unity-logo {
+            width: 154px;
+            height: 140px;
+            background: url('TemplateData/progresslogo.png') no-repeat center;
+        }
+        
+        #unity-progress-bar-empty {
+            width: 141px;
+            height: 18px;
+            margin-top: 10px;
+            background: url('TemplateData/progressempty.png') no-repeat center;
+        }
+        
+        #unity-progress-bar-full {
+            width: 0%;
+            height: 18px;
+            margin-top: 10px;
+            background: url('TemplateData/progressfull.png') no-repeat center;
+        }
+        
+        .orientation-warning {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            color: white;
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        
+        @media (orientation: landscape) {
+            .orientation-warning {
+                display: flex;
+            }
+        }
+        
+        /* Для ПК - всегда показываем в портретном режиме */
+        @media (min-width: 1080px) {
+            body {
+                background: #2a2a2a;
+            }
+        }
+    </style>
+    <script>
+        // Блокировка контекстного меню
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Блокировка зума
+        document.addEventListener('wheel', function(e) {
+            if (e.ctrlKey) e.preventDefault();
+        }, { passive: false });
+        
+        // Блокировка жестов касания
+        document.addEventListener('touchstart', function(e) {
+            if (e.touches.length > 1) e.preventDefault();
+        }, { passive: false });
+    </script>
+</head>
+<body>
+    <div class="orientation-warning">
+        <h2>🔄 Пожалуйста, переверните устройство</h2>
+        <p>Игра предназначена для портретного режима</p>
+    </div>
+
+    <div class="container">
+        <div id="unity-container">
+            <canvas id="unity-canvas" width=1080 height=1920></canvas>
+            <div id="unity-loading-bar">
+                <div id="unity-logo"></div>
+                <div id="unity-progress-bar-empty">
+                    <div id="unity-progress-bar-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var buildUrl = "Build";
+        var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+        var config = {
+            dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+            frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+            codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "Gazprombank",
+            productName: "Финслово ГПБ",
+            productVersion: "1.0",
+        };
+
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        var progressBarFull = document.querySelector("#unity-progress-bar-full");
+
+        // Отключаем полный экран для фиксированного разрешения
+        delete config.fullscreen;
+        
+        loadingBar.style.display = "block";
+
+        var script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = function() {
+            createUnityInstance(canvas, config, function(progress) {
+                progressBarFull.style.width = 100 * progress + "%";
+            }).then(function() {
+                loadingBar.style.display = "none";
+            }).catch(function(message) {
+                alert(message);
+            });
+        };
+        document.body.appendChild(script);
+        
+        // Проверка ориентации
+        function checkOrientation() {
+            var warning = document.querySelector('.orientation-warning');
+            if (window.innerWidth > window.innerHeight) {
+                warning.style.display = 'flex';
+            } else {
+                warning.style.display = 'none';
+            }
+        }
+        
+        window.addEventListener('resize', checkOrientation);
+        window.addEventListener('orientationchange', checkOrientation);
+        checkOrientation();
+    </script>
+</body>
+</html>
