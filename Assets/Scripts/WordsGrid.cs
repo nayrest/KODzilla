@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -75,7 +75,9 @@ public class NewEmptyCSharpScript : MonoBehaviour
     {
         if (currentGameData != null)
         {
-            var squareScale = GetSquareScale(new Vector3(1.5f, 1.5f, 0.1f));
+            // Уменьшите общий масштаб для всех GridSquare
+            var squareScale = GetSquareScale(new Vector3(0.5f, 0.5f, 0.1f)); // Было 1.5f
+
             foreach (var squares in currentGameData.selectedBoardData.Board)
             {
                 foreach (var squareLetter in squares.Row)
@@ -97,17 +99,22 @@ public class NewEmptyCSharpScript : MonoBehaviour
                     else
                     {
                         squareList.Add(Instantiate(grideSquarePrefad));
-                        squareList[squareList.Count -1].GetComponent<GrideSquare>().SetSprite(normalLetterData, correctLetterData, selectedLetterData);
-                        squareList[squareList.Count -1].transform.SetParent(this.transform);
-                        squareList[squareList.Count -1].GetComponent<Transform>().position = new Vector3(0f, 0f, 0f);
-                        squareList[squareList.Count -1].transform.localScale = squareScale;
-                        squareList[squareList.Count -1].GetComponent<GrideSquare>().SetIndex(squareList.Count -1);
+                        var gridSquareComponent = squareList[squareList.Count - 1].GetComponent<GrideSquare>();
+                        gridSquareComponent.SetSprite(normalLetterData, correctLetterData, selectedLetterData);
+                        squareList[squareList.Count - 1].transform.SetParent(this.transform);
+                        squareList[squareList.Count - 1].transform.position = new Vector3(0f, 0f, 0f);
+
+                        // Применяем уменьшенный масштаб
+                        squareList[squareList.Count - 1].transform.localScale = squareScale;
+
+                        squareList[squareList.Count - 1].GetComponent<GrideSquare>().SetIndex(squareList.Count - 1);
                     }
                 }
             }
         }
     }
 
+    // В методе GetSquareScale можно уменьшить минимальный масштаб
     private Vector3 GetSquareScale(Vector3 defaultScale)
     {
         var finalScale = defaultScale;
@@ -115,17 +122,15 @@ public class NewEmptyCSharpScript : MonoBehaviour
 
         while (ShouldScaleDown(finalScale))
         {
-            if (currentGameData != null)
-            {
-                finalScale.x -= adjustment;
-                finalScale.y -= adjustment;
+            finalScale.x -= adjustment;
+            finalScale.y -= adjustment;
 
-                if (finalScale.x <= 0 || finalScale.y <= 0)
-                {
-                    finalScale.x = adjustment;
-                    finalScale.y = adjustment;
-                    return finalScale;
-                }
+            // Установите минимальный масштаб меньше (например, 0.3 вместо 0.1)
+            if (finalScale.x <= 0.3f || finalScale.y <= 0.3f)
+            {
+                finalScale.x = 0.3f;
+                finalScale.y = 0.3f;
+                return finalScale;
             }
         }
 

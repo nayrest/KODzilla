@@ -948,7 +948,7 @@ MonoBehaviour:
   currentGameData: {fileID: 11400000, guid: 59ea4ea23e01e8a499f31f67df543d80, type: 2}
   grideSquarePrefad: {fileID: 5156656249816264501, guid: 0c0592a4cae109c48b1a5afb34c5b5cc, type: 3}
   alphabetData: {fileID: 11400000, guid: 96b3ee7b8cec2584789d4b7cbe4eb1bc, type: 2}
-  squareOffset: 0.06
+  squareOffset: 25
   topPosition: 4.55
 --- !u!4 &1411376687
 Transform:
