@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb9b09d38f46ef42a427e59b14f253b, type: 3}
+  m_Name: Ad_ContributionKeyPoint
+  m_EditorClassIdentifier: 
+  adImage: {fileID: -46072713806015662, guid: 64a470e1abfe6864485b4c75a9f0085a, type: 3}
+  title: "\u0412\u043A\u043B\u0430\u0434 \xAB\u041A\u043B\u044E\u0447\u0435\u0432\u043E\u0439
+    \u043C\u043E\u043C\u0435\u043D\u0442\xBB"
+  description: "\u041E\u0431\u0433\u043E\u043D\u044F\u0435\u043C \u043A\u043B\u044E\u0447\u0435\u0432\u0443\u044E
+    \u0441\u0442\u0430\u0432\u043A\u0443  "
+  buttonText: "\u0423\u0437\u043D\u0430\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
+  url: https://www.gazprombank.ru/personal/increase/deposits/detail/7937943/
+  weight: 1
+  titleFont: {fileID: 12800000, guid: 1f7a37a6580007d4b82119446478db34, type: 3}
+  descriptionFont: {fileID: 12800000, guid: 983769ec188d0854d965cbf4185a3aa8, type: 3}
+  buttonFont: {fileID: 12800000, guid: 7df649b4e52062442bd1d6705cc12d7c, type: 3}
+  titleColor: {r: 0, g: 0, b: 0, a: 1}
+  descriptionColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  buttonTextColor: {r: 1, g: 1, b: 1, a: 1}
+  titleFontSize: 32
+  descriptionFontSize: 18
+  buttonFontSize: 20
+  titleStyle: 1
+  descriptionStyle: 0
+  buttonStyle: 0
+  titleAlignment: 1
+  descriptionAlignment: 1
+  buttonAlignment: 4

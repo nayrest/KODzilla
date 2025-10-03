@@ -149,13 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompleteMessagePrefab: {fileID: 7241993969400428001, guid: 6b24893eaa38b0048ac153c4ce0437f0, type: 3}
-  adWindowPrefab: {fileID: 2864442799382965184, guid: 001a06fd49496ea44a6691621909b0b6, type: 3}
-  uiParent: {fileID: 88187331}
   wordsGridObject: {fileID: 1411376685}
-  returnToMain: {fileID: 1010200605}
-  mainMenuSceneName: MainMenu
-  messageDisplayTime: 3
-  adLinkURL: https://www.gazprombank.ru/personal/credit-cards/7950641/
+  closeGame: {fileID: 1010200605}
+  uiParent: {fileID: 88187331}
+  adManager: {fileID: 1042193779}
+  messageDisplayTime: 2
 --- !u!4 &2482857
 Transform:
   m_ObjectHideFlags: 0
@@ -792,6 +790,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010200605}
   m_CullTransparentMesh: 1
+--- !u!1 &1042193777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042193778}
+  - component: {fileID: 1042193779}
+  m_Layer: 0
+  m_Name: AdManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1042193778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042193777}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6794794, y: -2.4569335, z: -0.15011308}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1042193779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042193777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d0b54e6e6fd0c4483785ba0089fede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allAds:
+  - {fileID: 11400000, guid: 7b9a17a8149bd2c47befb0b8465d4cdb, type: 2}
+  - {fileID: 11400000, guid: a22806ca755547c419642f0a1466d927, type: 2}
+  - {fileID: 11400000, guid: f82fb3cf1f8220c42b19c1aec9c30433, type: 2}
+  - {fileID: 11400000, guid: fa7dd41e10634b54e84b6b7ec805bb51, type: 2}
+  - {fileID: 11400000, guid: 8be389929df2cd044abeeab2128792d5, type: 2}
+  - {fileID: 11400000, guid: dcc708e387923354a974a27b13b31d79, type: 2}
+  - {fileID: 11400000, guid: 9b4eeccbef64f7d4580230727b11c089, type: 2}
+  - {fileID: 11400000, guid: b9de84ea2dc03da4dbf42d4050326cc5, type: 2}
+  - {fileID: 11400000, guid: 8bb432c80618b414caa4d382fe5fe001, type: 2}
+  - {fileID: 11400000, guid: 6827e5ac96d6a044fa28a2050affd9ce, type: 2}
+  adWindowPrefab: {fileID: 2864442799382965184, guid: 001a06fd49496ea44a6691621909b0b6, type: 3}
+  uiParent: {fileID: 88187331}
 --- !u!1 &1411376685
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,3 +965,4 @@ SceneRoots:
   - {fileID: 88187331}
   - {fileID: 579644460}
   - {fileID: 2482857}
+  - {fileID: 1042193778}

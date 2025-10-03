@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb9b09d38f46ef42a427e59b14f253b, type: 3}
+  m_Name: Ad_Credit120
+  m_EditorClassIdentifier: 
+  adImage: {fileID: 9041416439503640329, guid: b6f9798aa4f8fbd40a535cb985372275, type: 3}
+  title: "\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430
+    \u0441 \u043B\u044C\u0433\u043E\u0442\u043D\u044B\u043C \u043F\u0435\u0440\u0438\u043E\u0434\u043E\u043C
+    \u0434\u043E 120 \u0434\u043D\u0435\u0439"
+  description: "\u041B\u044C\u0433\u043E\u0442\u043D\u044B\u0439 \u043F\u0435\u0440\u0438\u043E\u0434
+    \u0434\u043E 120 \u0434\u043D\u0435\u0439 \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442
+    \u043D\u0430 \u043F\u043E\u043A\u0443\u043F\u043A\u0438 \u0432 \u043F\u0435\u0440\u0432\u044B\u0439
+    \u0440\u0430\u0441\u0447\u0435\u0442\u043D\u044B\u0439 \u043F\u0435\u0440\u0438\u043E\u0434.
+    \u0427\u0442\u043E\u0431\u044B \u0434\u0430\u043B\u044C\u0448\u0435 \u0434\u0435\u043B\u0430\u0442\u044C
+    \u043F\u043E\u043A\u0443\u043F\u043A\u0438 \u0431\u0435\u0437 %, \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u0435
+    \u043B\u044C\u0433\u043E\u0442\u043D\u044B\u0439 \u043F\u0435\u0440\u0438\u043E\u0434
+    \u043F\u043E \u043A\u0430\u0440\u0442\u0435"
+  buttonText: "\u0423\u0437\u043D\u0430\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
+  url: https://www.gazprombank.ru/personal/credit-cards/7950641/
+  weight: 1
+  titleFont: {fileID: 12800000, guid: 1f7a37a6580007d4b82119446478db34, type: 3}
+  descriptionFont: {fileID: 12800000, guid: 983769ec188d0854d965cbf4185a3aa8, type: 3}
+  buttonFont: {fileID: 12800000, guid: 7df649b4e52062442bd1d6705cc12d7c, type: 3}
+  titleColor: {r: 0, g: 0, b: 0, a: 1}
+  descriptionColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
+  buttonTextColor: {r: 1, g: 1, b: 1, a: 1}
+  titleFontSize: 32
+  descriptionFontSize: 18
+  buttonFontSize: 20
+  titleStyle: 1
+  descriptionStyle: 0
+  buttonStyle: 0
+  titleAlignment: 1
+  descriptionAlignment: 1
+  buttonAlignment: 4
